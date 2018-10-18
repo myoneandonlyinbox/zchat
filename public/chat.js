@@ -1,6 +1,6 @@
 $(function(){
    	//make connection
-	let socket = io.connect('http://localhost:3000')
+	let socket = io.connect('https://zchat-219807.appspot.com/8080')
 
 	//buttons and inputs
 	let message = $("#message")

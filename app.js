@@ -11,11 +11,14 @@ app.use(express.static('public'))
 
 //routes
 app.get('/', (req, res) => {
+
 	res.render('index')
 })
 
-//Listen on port 3000
-server = app.listen(3000)
+//Listen on port 8080
+server = app.listen(process.env.PORT || 8080 , function() {
+    console.log('App live and listening... ')
+});
 
 
 
